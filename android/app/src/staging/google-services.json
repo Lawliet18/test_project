@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684586474296",
+    "project_id": "test-stg-87e23",
+    "storage_bucket": "test-stg-87e23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684586474296:android:005194211761deafed3fcd",
+        "android_client_info": {
+          "package_name": "com.example.verygoodcore.test_app.stg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO_-AZTFBFOqt0MiDbm-XYoOGiGWsx5U8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

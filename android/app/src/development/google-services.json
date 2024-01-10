@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332129513677",
+    "project_id": "test-dev-88ca1",
+    "storage_bucket": "test-dev-88ca1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332129513677:android:97e80dcb3b7744da9c3984",
+        "android_client_info": {
+          "package_name": "com.example.verygoodcore.test_app.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAeNvqkjoLyD-XuXQsDSs4PcJVX90tLzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
