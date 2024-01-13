@@ -1,7 +1,9 @@
-import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:test_app/core/extensions/theme_extension.dart';
 import 'package:test_app/core/localization/generated/codegen_loader.g.dart';
+import 'package:test_app/core/router/app_router.gr.dart';
 import 'package:test_app/presentation/pages/photos/photos_page.dart';
 
 enum MainSubPage { home, list, wind, balance }
@@ -21,9 +23,17 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
+    ThemeData theme = context.theme;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(LocaleKeys.appBarMainPage.tr()),
+        title: Text(LocaleKeys.appBarMainPage.tr(context: context)),
+        actions: [
+          IconButton(
+            onPressed: () => _onSettingsTap(context),
+            icon: Icon(Icons.settings),
+          ),
+        ],
       ),
       body: PageView(
         controller: _pageController,
@@ -49,8 +59,8 @@ class _MainPageState extends State<MainPage> {
             label: '',
           ),
         ],
-        selectedItemColor: Colors.blueGrey,
-        unselectedItemColor: Colors.blueGrey.shade200,
+        selectedItemColor: theme.colorScheme.primary,
+        unselectedItemColor: theme.colorScheme.primary.withOpacity(.4),
         type: BottomNavigationBarType.shifting,
       ),
     );
@@ -70,4 +80,7 @@ class _MainPageState extends State<MainPage> {
       curve: Curves.decelerate,
     );
   }
+
+  void _onSettingsTap(BuildContext context) =>
+      context.router.push(SettingsRoute());
 }

@@ -37,7 +37,7 @@ Future<void> bootstrap(Widget Function() builder) async {
 
   // Add cross-flavor configuration here
   await _initCrashlytics();
-  DependencyInjector.inject();
+  await DependencyInjector.inject();
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,

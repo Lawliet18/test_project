@@ -1,6 +1,10 @@
+import 'dart:io';
+
 import 'package:dio/dio.dart';
+import 'package:get_it/get_it.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:test_app/data/api/unsplash_api/i_unsplash_api.dart';
+import 'package:test_app/domain/data/app_data.dart';
 
 class UnsplashApi extends IUnsplashApi {
   UnsplashApi()
@@ -21,7 +25,10 @@ class UnsplashApi extends IUnsplashApi {
     return [
       InterceptorsWrapper(
         onRequest: (options, handler) {
+          final appData = GetIt.instance.get<AppData>();
           options.queryParameters['client_id'] = _testApiToken;
+          options.queryParameters[HttpHeaders.acceptLanguageHeader] =
+              appData.language;
           handler.next(options);
         },
       ),

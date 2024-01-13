@@ -44,7 +44,7 @@ class _PhotosPageState extends State<PhotosPage> {
                   ),
                   title: Text(
                     photos[index].description ??
-                        LocaleKeys.labelNoDescription.tr(),
+                        LocaleKeys.labelNoDescription.tr(context: context),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),

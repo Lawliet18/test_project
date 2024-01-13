@@ -2,6 +2,9 @@
   "appTitle": "Test App",
   "appBarMainPage": "Main Page",
   "appBarPhotos": "Photos",
+  "appBarSettings": "Settings",
   "labelAuthor": "Author: {}",
-  "labelNoDescription": "No Description"
+  "labelNoDescription": "No Description",
+  "labelLanguage": "Language",
+  "labelTheme": "Theme"
 }

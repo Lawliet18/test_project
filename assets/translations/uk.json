@@ -2,6 +2,9 @@
   "appTitle": "Тестовий Додаток",
   "appBarMainPage": "Головна Сторінка",
   "appBarPhotos": "Фотки",
+  "appBarSettings": "Налаштування",
   "labelAuthor": "Автор: {}",
-  "labelNoDescription": "Без опису"
+  "labelNoDescription": "Без опису",
+  "labelLanguage": "Мова",
+  "labelTheme": "Тема"
 }
