@@ -14,7 +14,7 @@ dependencies:
   dio: ^5.4.0
   easy_localization: ^3.0.3
   firebase_analytics: ^10.8.0
-  firebase_auth: ^4.16.0
+  firebase_auth: ^4.17.0
   firebase_core: ^2.24.0
   firebase_crashlytics: ^3.4.9
   flutter:
